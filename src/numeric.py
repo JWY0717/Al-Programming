@@ -58,8 +58,12 @@ def evaluate(state, p):
 
 # __name__ ==> "__main__"이 없으면 실행을 시켜줘
 if __name__ == " __main__":
-    pass
-
+    # 식과 인자를 분리
+    p = create_problem("./data/Convex.txt")
+    describe_problem(p)
+    solution = random_init(p)
+    minimum = evaluate(solution, p)
+    print(f"{minimum}")
 
 
 ## 2.

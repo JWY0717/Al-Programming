@@ -1,4 +1,4 @@
-import numeric
+import src.numeric as numeric
 
 def test_create_problem():
     result = numeric.create_problem("./data/Convex.txt")
